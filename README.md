@@ -12,7 +12,7 @@ HTTPS server certificates usually have their "Common Name" set to their fully qu
 domain name and are signed by a well known certificate authority such as Verisign. 
 However, the "Common Name" usually used in client certificates can be set to anything that
 identifies the client such as "Acme, Co." or "client-12345". This will be presented to the 
-server and can be used in addition to or instead of username / password stratiges to
+server and can be used in addition to or instead of username / password strategies to
 identify the client.
 
 Using node.js, one can instruct the server to request a client certificate and reject 
@@ -114,7 +114,7 @@ certificate signed by the certificate authority. Let's test that out in another 
 
     node client 1
 
-This will invoke a client using the client1-crt.pem certificate which sould connet to the server
+This will invoke a client using the client1-crt.pem certificate which should connect to the server
 and get a "hello world" back in the body. Let's try it with the other client certificate as well:
 
     node client 2
@@ -123,8 +123,8 @@ You should be able to see from the server output that it can distinguish between
 by the certificates they present. (client1 or client2 which are the Common Names set in the .cnf 
 files)
 
-Certificat Revocation
-=====================
+Certificate Revocation
+======================
 
 All is well in the world until we want to shut down a specific client without shutting everybody 
 else down and regenerating certificates. Let's create a Certificate Revocation List (CRL) and 
