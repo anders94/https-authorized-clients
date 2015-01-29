@@ -18,22 +18,18 @@ identify the client.
 Using node.js, one can instruct the server to request a client certificate and reject 
 unauthorized clients by adding
 
-```json
-{
-  requestCert: true,
-  rejectUnauthorized: true
-}
-```
+    {
+      requestCert: true,
+      rejectUnauthorized: true
+    }
 
 to the options passed to https.createServer(). In turn, a client will be rejected unless
 it passes a valid certificate in its https.request() options.
 
-```json
-{
-  key: fs.readFileSync('keys/client-key.pem'),
-  cert: fs.readFileSync('keys/client-crt.pem')
-}
-```
+    {
+      key: fs.readFileSync('keys/client-key.pem'),
+      cert: fs.readFileSync('keys/client-crt.pem')
+    }
 
 The following exercise will create a self signed certificate authority, server certificate and 
 two client certificates all "self signed" by the certificate authority. Then we will run an 
