@@ -4,7 +4,7 @@ HTTPS Authorized Certs
 Typically, HTTPS servers do a basic TLS handshake and accept any client connection as 
 long as a compatible cipher suite can be found. However, the server can be configured 
 to send the client a CertificateRequest during the TLS handshake which requires the
-client to present a certificate as well as a form of identity.
+client to present a certificate as a form of identity.
 
 * [http://en.wikipedia.org/wiki/Transport_Layer_Security#Client-authenticated_TLS_handshake](Client-authenticated TLS Handshakes) (from Wikipedia)
 
