@@ -137,9 +137,11 @@ Now let's revoke client2's certificate and update the CRL:
     openssl ca -revoke keys/client2-crt.pem -keyfile keys/ca-key.pem -config keys/ca.cnf -cert keys/ca-crt.pem -passin 'pass:password'
     openssl ca -keyfile keys/ca-key.pem -cert keys/ca-crt.pem -config keys/ca.cnf -gencrl -out keys/ca-crl.pem -passin 'pass:password'
 
-If we were to test right now, client 2 would still be able to connect. Because we don't continually
-re-initialize the HTTPS server, we haven't yet picked up on the revoked certificate. Let's stop
-and then restart the server:
+Let's stop the server and comment back in line 8 which reads in the CRL:
+
+    crl: fs.readFileSync('keys/ca-crl.pem')
+
+and restart the server again:
 
     node server
 

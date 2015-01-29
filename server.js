@@ -5,7 +5,7 @@ var options = {
     key: fs.readFileSync('keys/server-key.pem'),
     cert: fs.readFileSync('keys/server-crt.pem'),
     ca: fs.readFileSync('keys/ca-crt.pem'),
-    crl: fs.readFileSync('keys/ca-crl.pem'),
+    //crl: fs.readFileSync('keys/ca-crl.pem'),
     requestCert: true,
     rejectUnauthorized: true
 };
