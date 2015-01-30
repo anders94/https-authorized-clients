@@ -6,7 +6,9 @@ long as a compatible cipher suite can be found. However, the server can be confi
 to send the client a CertificateRequest during the TLS handshake which requires the
 client to present a certificate as a form of identity.
 
-* [http://en.wikipedia.org/wiki/Transport_Layer_Security#Client-authenticated_TLS_handshake](Client-authenticated TLS Handshakes) (Client-authenticated TLS Handshake on Wikipedia)
+Here's some background on
+[Client-authenticated TLS Handshakes](http://en.wikipedia.org/wiki/Transport_Layer_Security#Client-authenticated_TLS_handshake)
+at Wikipedia.
 
 HTTPS server certificates usually have their "Common Name" set to their fully qualified 
 domain name and are signed by a well known certificate authority such as Verisign. 
