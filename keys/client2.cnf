@@ -8,11 +8,10 @@ x509_extensions        = v3_ca
 
 [ req_distinguished_name ]
 C                      = US
-ST                     = NY
-L                      = New York
+ST                     = MA
+L                      = Boston
 O                      = Example Co
 OU                     = techops
-CN                     = ca
 CN                     = client2
 emailAddress           = certs@example.com
 

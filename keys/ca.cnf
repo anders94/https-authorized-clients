@@ -20,12 +20,12 @@ output_password        = password
 
 [ req_distinguished_name ]
 C                      = US
-ST                     = NY
-L                      = New York
+ST                     = MA
+L                      = Boston
 O                      = Example Co
 OU                     = techops
 CN                     = ca
-emailAddress           = a@b.com
+emailAddress           = certs@example.com
 
 [ req_attributes ]
 challengePassword      = test
